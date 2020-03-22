@@ -20,6 +20,26 @@ public class Main {
 		
 		double priceOfTopofListoping =  topofList.calculate();
 		System.out.println(priceOfTopofListoping);
+		
+		Doping[] dopingList = new Doping[2];
+		dopingList[0] = updatodate;
+		dopingList[1] = topofList;
+		
+		System.out.println("Total price: " + calculateTotalDopingPrice(dopingList));
+		
 	}
-
+	
+	public static double calculateTotalDopingPrice(Doping[] dopingList) {
+		
+		double total = 0;
+		
+		for(Doping doping : dopingList) {
+			
+			total += doping.calculate();
+			
+		}
+		
+		return total;
+	}
+	
 }

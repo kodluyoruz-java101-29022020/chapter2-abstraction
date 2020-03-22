@@ -22,6 +22,7 @@ public class UptoDateDoping extends Doping {
 		return totalPrice;
 	}
 	
+	
 	private double calculateProfit() {
 		
 		double profit = super.price * 0.10;
